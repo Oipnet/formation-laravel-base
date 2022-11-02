@@ -1,4 +1,4 @@
-# Aprecu des design pattern
+# Apercu des design patterns
 
 1. [Le pattern Factory](le_pattern_factory.md)
 2. [Le pattern Singleton](le_pattern_singleton.md)
