@@ -1,5 +1,11 @@
 # Mise en pratique
 
+---
+
+[Formation laravel de base](../../README.md) > [Rappel et remise a niveau](../README.md) > Mise en pratique
+
+---
+
 Nous allons refactorer le code du fichier [register.php](code/register.php)
 
 composer permettra de gérer l'autoloader.

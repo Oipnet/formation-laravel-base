@@ -1,5 +1,11 @@
 # Les classes
 
+---
+
+[Formation laravel de base](../../README.md) > [Rappel et remise a niveau](../README.md) > [Rappel sur les principes de base de la POO](README.md) > Les classes
+
+---
+
 ## Présentation
 Une classe est un rassemblement de propriétés et de méthodes sur un sujet particulier.
 

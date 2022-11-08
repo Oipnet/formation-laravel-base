@@ -1,5 +1,11 @@
 # L'héritage
 
+---
+
+[Formation laravel de base](../../README.md) > [Rappel et remise a niveau](../README.md) > [Rappel sur les principes de base de la POO](README.md) > L'héritage
+
+---
+
 L'héritage permet de créer une nouvelle classe qui héritera de toutes
 les propriétés et méthodes public et protected de la classe parente.
 
