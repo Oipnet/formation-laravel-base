@@ -14,12 +14,19 @@ Pour se servir d'une interface on utise le mot clef "implements".
 Toute les méthode définie dans une interface doivent être
 implementées dans les classe qui utilisent cette interface.
 
+A la différnce de l'héritage une classe peut implementer plusieurs 
+interfaces
+
 ## Exemple
 
 ```php
 <?php
 interface Combatant {
+    public function attaque(): void;
+}
 
+interface Soigneur {
+    public function soigne(): void;
 }
 abstract class Personage
 {
@@ -31,7 +38,7 @@ abstract class Personage
     {
     }
 
-    public function attaque()
+    public function attaque(): void
     {
         echo 'Donne un coup d\'une force de ' . $this->force.'<br>';
     }
@@ -39,7 +46,7 @@ abstract class Personage
     abstract public function ditTonNom(): void;
 }
 
-class Archer extends Personage
+class Archer extends Personage implements Combatant
 {
     public function __construct()
     {
@@ -55,7 +62,7 @@ class Archer extends Personage
     }
 }
 
-class Mage extends Personage
+class Mage extends Personage implements Combatant, Soigneur
 {
     public function __construct()
     {

@@ -1,4 +1,15 @@
 <?php
+
+interface Combatant
+{
+    public function attaque(): void;
+}
+
+interface Soigneur
+{
+    public function soigne(): void;
+}
+
 abstract class Personage
 {
     protected int $force = 100;
@@ -9,15 +20,15 @@ abstract class Personage
     {
     }
 
-    public function attaque()
+    public function attaque(): void
     {
-        echo 'Donne un coup d\'une force de ' . $this->force.'<br>';
+        echo 'Donne un coup d\'une force de ' . $this->force . '<br>';
     }
 
     abstract public function ditTonNom(): void;
 }
 
-class Archer extends Personage
+class Archer extends Personage implements Combatant
 {
     public function __construct()
     {
@@ -33,7 +44,7 @@ class Archer extends Personage
     }
 }
 
-class Mage extends Personage
+class Mage extends Personage implements Combatant, Soigneur
 {
     public function __construct()
     {
@@ -43,8 +54,9 @@ class Mage extends Personage
         parent::__construct(vie: $vie);
     }
 
-    public function soigne() {
-        echo 'Soin de '.($this->force * 10).'<br>';
+    public function soigne(): void
+    {
+        echo 'Soin de ' . ($this->force * 10) . '<br>';
     }
 
 
@@ -55,10 +67,14 @@ class Mage extends Personage
 }
 
 $archer = new Archer();
-$archer->attaque();
 $archer->ditTonNom();
+echo ($archer instanceof Combatant ? 'Je peux attaquer' : 'Je ne peux pas attaquer').'<br>';
+echo ($archer instanceof Soigneur ? 'Je peux soigner' : 'Je ne peux pas soigner').'<br>';
+$archer->attaque();
 
 $mage = new Mage();
+$mage->ditTonNom();
+echo ($mage instanceof Combatant ? 'Je peux attaquer' : 'Je ne peux pas attaquer').'<br>';
+echo ($mage instanceof Soigneur ? 'Je peux soigner' : 'Je ne peux pas soigner').'<br>';
 $mage->attaque();
 $mage->soigne();
-$mage->ditTonNom();
