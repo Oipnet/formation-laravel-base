@@ -1,11 +1,11 @@
 <?php
 
-require_once './VoitureFactory.php';
-require_once './TrainFactory.php';
+require_once './DvdRentManager.php';
+require_once './BluRayRentManager.php';
 
-$voitureFactory = new VoitureFactory();
-$voitureFactory->roule();
+$voitureFactory = new DvdRentManager();
+$voitureFactory->planARent();
 echo '<br>';
 
-$trainFactory = new TrainFactory();
-$trainFactory->roule();
+$trainFactory = new BluRayRentManager();
+$trainFactory->planARent();

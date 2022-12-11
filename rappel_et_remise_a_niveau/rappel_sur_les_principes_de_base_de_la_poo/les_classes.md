@@ -36,8 +36,8 @@ class Voiture {
     }
 }
 
-$voiture1 = new Voiture({ marque: "Citroen" });
-$voiture2 = new Voiture({ marque: "Renault", cylindree: 120 });
+$voiture1 = new Dvd({ marque: "Citroen" });
+$voiture2 = new Dvd({ marque: "Renault", cylindree: 120 });
 
 echo $voiture1->getCylindree(); // 150
 echo $voiture2->getMarque(); // Renault

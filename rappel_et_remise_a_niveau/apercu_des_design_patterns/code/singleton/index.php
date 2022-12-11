@@ -1,10 +1,9 @@
 <?php
 
-require './Singleton.php';
+require './DatabaseManager.php';
 
-$singleton = Singleton::getInstance();
-$singleton2 = Singleton::getInstance();
-$test = new DateTime();
+$databaseManager = DatabaseManager::getInstance();
+$databaseManager2 = DatabaseManager::getInstance();
 
-echo sprintf('Emplacement memoire : %s', spl_object_hash($singleton)).'<br>';
-echo sprintf('Emplacement memoire : %s', spl_object_hash($singleton2));
+echo sprintf('Emplacement memoire : %s', spl_object_hash($databaseManager)).'<br>';
+echo sprintf('Emplacement memoire : %s', spl_object_hash($databaseManager2));
