@@ -8,7 +8,7 @@
 
 Nous allons refactorer le code du fichier [register.php](code/register.php)
 
-composer permettra de gérer l'autoloader.
+Composer permettra de gérer l'autoloader.
 
 A l'aide de composer nous installerons les librairies suivantes :
  - rakit/validation
