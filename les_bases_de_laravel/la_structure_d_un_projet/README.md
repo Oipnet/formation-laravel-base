@@ -17,5 +17,4 @@ Laravel n'impose aucune restriction.
 ## Structure
 
 1. [Le dossier racine](./le_dossier_racine.md)
-2. Le dossier app
-3. 
+2. [Le dossier app](./le_dossier_app.md)

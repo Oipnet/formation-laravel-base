@@ -68,6 +68,7 @@ Par défaut il contient les fichiers web.php, api.php, console.php
 et channel.php
 
 ---
+
 Le fichier web.php contient les routes placées dans le middleware web
 qui fournit :
 
@@ -77,19 +78,25 @@ qui fournit :
 
 Si l'application n'est pas une API REST toutes les routes seront 
 probablement définient dans ce fichier.
+
 ---
+
 Le fichier api.php contient les routes placées dans le middleware api 
 qui fournit : 
 
  - un mécanisme STATELESS (pas de session)
  - Une authentification par jetons
+
 ---
+
 Le fichier console.php permet de définir les commandes disponibles
 dans votre application.
 
 Même si ce fichier ne définie pas des routes HTTP, il définit des 
 points d'entrées de la console.
+
 ---
+
 Le fichier channel.php permet d'enregistrer les canaux de diffusion 
 d'évènements que l'application prend en charge.
 
