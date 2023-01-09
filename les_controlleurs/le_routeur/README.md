@@ -10,3 +10,4 @@
 2. [Les parametres](./les_parametres.md)
 3. [Les routes nommées](./les_routes_nommees.md)
 4. [Les groupes](./les_groupes.md)
+5. [Model binding](./model_binding.md)
